@@ -9,7 +9,7 @@
     
     <title>
         
-            Standard-Readme |
+            Flutter环境搭建 |
         
         Blog
     </title>
@@ -144,7 +144,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Standard-Readme</span>
+            <span class="title-hover-animation">Flutter环境搭建</span>
         </div>
 
         
@@ -162,7 +162,7 @@
                     <div class="meta-info">
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fas fa-edit"></i>&nbsp;2021-07-29 15:39:24
+        <i class="fas fa-edit"></i>&nbsp;2021-08-04 17:43:02
     </span>
     
         <span class="article-categories article-meta-item">
@@ -170,7 +170,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/Markdown/">Markdown</a>&nbsp;
+                        <a href="/categories/Flutter/">Flutter</a>&nbsp;
                     </li>
                 
             </ul>
@@ -182,7 +182,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/Markdown/">Markdown</a>&nbsp;
+                        <a href="/tags/Flutter/">Flutter</a>&nbsp;
                     </li>
                 
             </ul>
@@ -201,27 +201,28 @@
         
 
         <div class="article-content markdown-body">
-            <p>标准版 README 生成工具</p>
-<h1 id="Standard-Readme"><a href="#Standard-Readme" class="headerlink" title="Standard-Readme"></a>Standard-Readme</h1><blockquote>
-<p><a class="link"   target="_blank" rel="noopener" href="https://github.com/RichardLitt/standard-readme" >GitHub<i class="fas fa-external-link-alt"></i></a></p>
+            <h3 id="1-安装Flutter-SDK"><a href="#1-安装Flutter-SDK" class="headerlink" title="1. 安装Flutter SDK"></a>1. 安装Flutter SDK</h3><p><a class="link"   target="_blank" rel="noopener" href="https://flutter.dev/docs/development/tools/sdk/releases?tab=macos" >下载地址<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<ul>
+<li><p>选择自己的操作系统和最新稳定的版本（Stable版本）</p>
+</li>
+<li><p>我选择的是 2.2.3-stable <a class="link"   target="_blank" rel="noopener" href="https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_2.2.3-stable.zip" >链接<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+</ul>
 </blockquote>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><p>This project uses <a class="link"   target="_blank" rel="noopener" href="http://nodejs.org/" >node<i class="fas fa-external-link-alt"></i></a> and <a class="link"   target="_blank" rel="noopener" href="https://npmjs.com/" >npm<i class="fas fa-external-link-alt"></i></a>. Go check them out if you don’t have them locally installed.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --global standard-readme-spec</span><br></pre></td></tr></table></figure>
+<h3 id="2-安装Flutter"><a href="#2-安装Flutter" class="headerlink" title="2. 安装Flutter"></a>2. 安装Flutter</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/development</span><br></pre></td></tr></table></figure>
 
-<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>This is only a documentation package. You can print out <a class="link"   target="_blank" rel="noopener" href="https://github.com/RichardLitt/standard-readme/blob/master/spec.md" >spec.md<i class="fas fa-external-link-alt"></i></a> to your console:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ standard-readme-spec</span><br><span class="line"><span class="comment"># Prints out the standard-readme spec</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/development</span><br><span class="line">unzip ~/Downloads/flutter_macos_2.2.3-stable.zip</span><br></pre></td></tr></table></figure>
 
-<h1 id="generator-standard-readme"><a href="#generator-standard-readme" class="headerlink" title="generator-standard-readme"></a>generator-standard-readme</h1><blockquote>
-<p><a class="link"   target="_blank" rel="noopener" href="https://github.com/RichardLitt/generator-standard-readme" >GitHub<i class="fas fa-external-link-alt"></i></a></p>
-</blockquote>
-<h3 id="Install-1"><a href="#Install-1" class="headerlink" title="Install"></a>Install</h3><p>This generator requires <a class="link"   target="_blank" rel="noopener" href="https://nodejs.org/" >node<i class="fas fa-external-link-alt"></i></a>, <a class="link"   target="_blank" rel="noopener" href="https://npmjs.com/" >npm<i class="fas fa-external-link-alt"></i></a>, and <a class="link"   target="_blank" rel="noopener" href="http://yeoman.io/" >yeoman<i class="fas fa-external-link-alt"></i></a>.</p>
-<p>You can install it by running:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global yo generator-standard-readme</span><br></pre></td></tr></table></figure>
+<h3 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3. 配置环境变量"></a>3. 配置环境变量</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bash_profile</span><br><span class="line"><span class="comment"># 添加Flutter环境变量 -&gt; .bash_profile</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:~/development/flutter/bin</span><br><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br><span class="line"></span><br><span class="line">vi ~/.zshrc</span><br><span class="line"><span class="comment"># 添加Flutter环境变量 -&gt; .zshrc</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:~/development/flutter/bin</span><br><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
 
-<h3 id="Usage-1"><a href="#Usage-1" class="headerlink" title="Usage"></a>Usage</h3><p>With <a class="link"   target="_blank" rel="noopener" href="https://github.com/yeoman/yo" >yo<i class="fas fa-external-link-alt"></i></a>:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> &lt;Local&gt;</span><br><span class="line">$ yo standard-readme</span><br></pre></td></tr></table></figure>
+<h3 id="4-环境监测"><a href="#4-环境监测" class="headerlink" title="4. 环境监测"></a>4. 环境监测</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
 
-<p>This will write a file, <code>readme.md</code>, to the local directory.</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Doctor summary (to see all details, run flutter doctor -v):</span><br><span class="line">[✓] Flutter (Channel stable, 2.2.3, on macOS 11.3.1 20E241 darwin-arm, locale</span><br><span class="line">    zh-Hans-CN)</span><br><span class="line">[✗] Android toolchain - develop for Android devices</span><br><span class="line">    ✗ Unable to locate Android SDK.</span><br><span class="line">      Install Android Studio from:</span><br><span class="line">      https://developer.android.com/studio/index.html</span><br><span class="line">      On first launch it will assist you in installing the Android SDK</span><br><span class="line">      components.</span><br><span class="line">      (or visit https://flutter.dev/docs/get-started/install/macos<span class="params">#</span>android-setup</span><br><span class="line">      for detailed instructions).</span><br><span class="line">      If the Android SDK has been installed to a custom location, please use</span><br><span class="line">      `flutter config --android-sdk` to update to that location.</span><br><span class="line"></span><br><span class="line">[✓] Xcode - develop for iOS and macOS</span><br><span class="line">[✓] Chrome - develop for the web</span><br><span class="line">[!] Android Studio (not installed)</span><br><span class="line">[✓] VS Code (version 1.58.2)</span><br><span class="line">[✓] Connected device (1 available)</span><br><span class="line"></span><br><span class="line">! Doctor found issues in 2 categories.</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-Demo-测试"><a href="#5-Demo-测试" class="headerlink" title="5. Demo 测试"></a>5. Demo 测试</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flutter create demo</span><br><span class="line">flutter run</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Launching lib/main.dart on Chrome <span class="keyword">in</span> debug mode...</span><br><span class="line">Waiting <span class="keyword">for</span> connection from debug service on Chrome...             13.2s</span><br><span class="line">This app is linked to the debug service: ws://127.0.0.1:51233/6K03h1AY6AQ=/ws</span><br><span class="line">Debug service listening on ws://127.0.0.1:51233/6K03h1AY6AQ=/ws</span><br><span class="line"></span><br><span class="line">💪 Running with sound null safety 💪</span><br><span class="line"></span><br><span class="line">🔥  To hot restart changes <span class="keyword">while</span> running, press <span class="string">&quot;r&quot;</span> or <span class="string">&quot;R&quot;</span>.</span><br><span class="line">For a more detailed <span class="built_in">help</span> message, press <span class="string">&quot;h&quot;</span>. To quit, press <span class="string">&quot;q&quot;</span>.</span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -230,29 +231,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2021/08/04/Flutter%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">Flutter环境搭建</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2021/07/23/%E9%95%9C%E5%83%8F%E5%BA%93/"
+                           href="/2021/07/29/Standard-Readme/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">镜像库</span>
+                                <span class="post-nav-title-item">Standard-Readme</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
